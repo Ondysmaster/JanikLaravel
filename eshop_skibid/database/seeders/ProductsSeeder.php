@@ -9,8 +9,8 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-
         for ($i = 0; $i < 10; $i++) {
+
             DB::table('products')->insert([
                 'name' => $faker->word,
                 'description' => $faker->sentence,
