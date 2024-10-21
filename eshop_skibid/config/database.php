@@ -16,8 +16,8 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlite'),
-
+    'database' => env('DB_DATABASE', database_path('database.sqlite')),
+    
     /*
     |--------------------------------------------------------------------------
     | Database Connections
